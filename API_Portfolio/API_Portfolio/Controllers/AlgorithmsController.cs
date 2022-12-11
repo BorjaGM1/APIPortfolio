@@ -20,7 +20,7 @@ namespace API_Portfolio.Controllers
         }
 
         [HttpPost("getmagicsquare")]
-        public IActionResult GetMagicSquare([FromBody] int size)
+        public IActionResult GetMagicSquare([FromForm] int size)
         {
             var magicSquare = _algorithms.GetMagicSqare(size);
 
