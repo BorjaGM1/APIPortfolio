@@ -21,6 +21,9 @@ var app = builder.Build();
 
 app.UseCors("corsapp");
 
+app.UseSwagger();
+app.UseSwaggerUI();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

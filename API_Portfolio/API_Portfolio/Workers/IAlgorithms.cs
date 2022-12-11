@@ -2,6 +2,7 @@
 {
     public interface IAlgorithms
     {
-        public int[] GetMagicSqare(int size);
+        public int[][] GetMagicSquare(int size);
+        public int[][] GetMagicSquareMock();
     }
 }

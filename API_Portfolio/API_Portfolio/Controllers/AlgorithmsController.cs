@@ -22,7 +22,15 @@ namespace API_Portfolio.Controllers
         [HttpPost("getmagicsquare")]
         public IActionResult GetMagicSquare([FromForm] int size)
         {
-            var magicSquare = _algorithms.GetMagicSqare(size);
+            var magicSquare = _algorithms.GetMagicSquare(size);
+
+            return Ok(magicSquare);
+        }
+
+        [HttpGet("getmagicsquaremock")]
+        public IActionResult GetMagicSquareMock()
+        {
+            var magicSquare = _algorithms.GetMagicSquareMock();
 
             return Ok(magicSquare);
         }
